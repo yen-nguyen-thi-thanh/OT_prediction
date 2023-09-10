@@ -132,7 +132,7 @@ if (TRUE){
     theta_SL2[[i]]= SL2$SL.predict  
     
     np <- import('numpy')
-    np$savez_compressed('data_sim_sl_with_knn_new', train= trainbis, test = testbis, rmse_SL1 = rmse_SL1, mae_SL1 = mae_SL1,
+    np$savez_compressed('data_simulate.npz', train= trainbis, test = testbis, rmse_SL1 = rmse_SL1, mae_SL1 = mae_SL1,
                         rmse_SL2 = rmse_SL2, mae_SL2 = mae_SL2, theta_SL2 = theta_SL2, theta_SL1 = theta_SL1)   
   }
 }
